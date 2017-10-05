@@ -39,7 +39,7 @@ def signup():
     #Verify Password validation
     if verify_pass == "":
         verify_pass_error = "Verify Password was left blank"
-    elif len(verify_pass) < 3 or len(password) > 20:
+    elif len(verify_pass) < 3 or len(verify_pass) > 20:
         verify_pass_error = "Verify Password is invalid - length allowed 3-20 characters"
         verify_pass = ""
     elif " " in verify_pass:
